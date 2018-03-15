@@ -31,7 +31,7 @@ public class Connessione {
 			try {
 				Class.forName("com.mysql.jdbc.Driver").newInstance();
 				String url = "jdbc:mysql://localhost:3306/autobus";
-				connection = DriverManager.getConnection(url, "root", "");
+				connection = DriverManager.getConnection(url, "root", "aaaa");
 			} catch (java.lang.ClassNotFoundException e) {
 				throw new SQLException(e);
 			} catch (IllegalAccessException e) {
