@@ -29,7 +29,7 @@ public class Provola extends HttpServlet {
 		String codreg = request.getParameter("codregistrazione");
 		System.out.println("Provolaq"+codreg);
 		
-		response.getWriter().write("vai fortissimo");
+		response.getWriter().write("vai fortissimooooo");
 		/*updateDB ins = new updateDB();
 		String contr = ins.inserimento("update utente set stato='registrato' where codregistrazione like '"+codreg+"' and stato like 'inattivo'");
 		if(contr.equalsIgnoreCase("1")){
