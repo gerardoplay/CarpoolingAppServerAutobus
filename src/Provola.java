@@ -26,20 +26,11 @@ public class Provola extends HttpServlet {
 		// TODO Auto-generated method stub
 		//System.out.println("hello0");
 		//String email = request.getParameter("email");
-		String codreg = request.getParameter("codregistrazione");
+		String codreg = request.getParameter("cod");
 		System.out.println("Provolaq"+codreg);
 		
-		response.getWriter().write("vai fortissimooooo");
-		/*updateDB ins = new updateDB();
-		String contr = ins.inserimento("update utente set stato='registrato' where codregistrazione like '"+codreg+"' and stato like 'inattivo'");
-		if(contr.equalsIgnoreCase("1")){
-			response.getWriter().write("Registrazione conclusa con successo");
-		}else
-			if(contr.equalsIgnoreCase("0")){
-				response.getWriter().write("Utente già registrato");
-			}else
-				response.getWriter().write("CodErrore: "+contr);
-				*/
+		response.getWriter().write(codreg);
+	
 	}
 
 		
