@@ -28,12 +28,11 @@ public class ServletTrovaPercorsiAutobus extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-	
-		double indlat=Double.parseDouble(request.getParameter("indlat"));
-		double indlon=Double.parseDouble(request.getParameter("indlon"));
 		String ar = request.getParameter("ar");
 		String data = request.getParameter("data");
 		String ora = request.getParameter("ora");
+		double indlat=Double.parseDouble(request.getParameter("indlat"));
+		double indlon=Double.parseDouble(request.getParameter("indlon"));
 		double partenzalat;
 		double partenzalon;
 		double arrivolat;
@@ -148,7 +147,7 @@ public class ServletTrovaPercorsiAutobus extends HttpServlet {
 		}
 		}
 		
-		//risposta inviamo i dati raccolti
+		//risposta inviamo i dati raccolti al server primario
 		if(codPercorsiFinali.length()>0) {
 			try {
 				js.put("codPercorsi", codPercorsiFinali);
@@ -169,7 +168,7 @@ public class ServletTrovaPercorsiAutobus extends HttpServlet {
 		
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("sono in post di provola");
+		
 	}
 	
 	
