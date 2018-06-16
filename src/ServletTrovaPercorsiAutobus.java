@@ -78,10 +78,10 @@ public class ServletTrovaPercorsiAutobus extends HttpServlet {
 				double d1=distance(partenzalat,fLat , partenzalon, fLon);
 				double d2=distance(arrivolat,fLat , arrivolon, fLon);
 				//se la distanza tra la nostra fermata di partenza e quella nel database è minore a 1,5km allora aggiungo la fermata al nostro jsonArray
-				if(d1<1500) {
+				if(d1<10000) {
 					fermatePartenza.put(nomeFermata);
 				} //stessa cosa per la fermata di arrivo
-				if(d2<1500) {
+				if(d2<10000) {
 					fermateArrivo.put(nomeFermata);
 				}
 			}
